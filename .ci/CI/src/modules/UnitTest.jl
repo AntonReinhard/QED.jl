@@ -308,7 +308,7 @@ function _get_amdgpu_unit_test(
     job_yaml = _get_normal_unit_test(
         version, test_package, target_branch, AMDGPU, tools_git_repo
     )
-    job_yaml["image"] = "rocm/dev-ubuntu-24.04:6.2.4-complete"
+    job_yaml["image"] = "rocm/dev-ubuntu-22.04:6.0.2-complete"
     job_yaml["before_script"] = [
         "curl -fsSL https://install.julialang.org | sh -s -- -y -p /julia",
         "export PATH=/julia/bin:\$PATH",

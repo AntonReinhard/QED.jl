@@ -7,7 +7,7 @@
 
     expected_job["script"] = get_main_unit_job_script_section(git_url, git_branch)
 
-    expected_job["image"] = "rocm/dev-ubuntu-24.04:6.2.4-complete"
+    expected_job["image"] = "rocm/dev-ubuntu-22.04:6.0.2-complete"
     expected_job["before_script"] = get_amdgpu_before_script("1.11")
     expected_job["variables"]["TEST_AMDGPU"] = "1"
     expected_job["tags"] = ["rocm", "x86_64"]
